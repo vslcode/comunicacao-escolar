@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel dos Pais</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Painel dos Pais</h2>
+
+    <div class="section">
+      <h3>Recados da Escola</h3>
+      <ul id="recadosRecebidos"></ul>
+    </div>
+
+    <div class="section">
+      <h3>Lista de Avisos</h3>
+      <ul id="avisosRecebidos"></ul>
+    </div>
+
+    <div class="section">
+      <h3>Calendário Escolar</h3>
+      <ul id="calendarioRecebido"></ul>
+    </div>
+
+    <div class="section">
+      <h3>Chat com Professor</h3>
+      <div class="chatbox" id="chatUser"></div>
+      <input type="text" id="mensagemUser" placeholder="Mensagem">
+      <button onclick="enviarMensagemUser()">Enviar</button>
+    </div>
+  </div>
+  <script src="js/usuario.js"></script>
+</body>
+</html>

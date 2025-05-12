@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Professor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Painel do Professor</h2>
+    <div class="section">
+      <h3>Enviar Recado</h3>
+      <textarea id="recadoInput" placeholder="Digite o recado"></textarea>
+      <button onclick="enviarRecado()">Enviar</button>
+    </div>
+
+    <div class="section">
+      <h3>Lista de Avisos</h3>
+      <ul id="avisos"></ul>
+    </div>
+
+    <div class="section">
+      <h3>Calendário Escolar</h3>
+      <input type="date" id="dataEvento">
+      <input type="text" id="eventoTexto" placeholder="Descrição do evento">
+      <button onclick="adicionarEvento()">Adicionar Evento</button>
+      <ul id="calendario"></ul>
+    </div>
+
+    <div class="section">
+      <h3>Chat com Pais</h3>
+      <div class="chatbox" id="chatAdmin"></div>
+      <input type="text" id="mensagemAdmin" placeholder="Mensagem">
+      <button onclick="enviarMensagemAdmin()">Enviar</button>
+    </div>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>
